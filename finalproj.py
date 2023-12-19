@@ -90,7 +90,7 @@ response = requests.get(webex_api_url, headers=headers)
 rooms = response.json()["items"]
 
 # Specify the Webex Teams room IDs where you want to send notifications
-target_room_ids = ["Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vOWNmOTJjYTAtOWU3Mi0xMWVlLWIzMzEtOWRhNDAzZWQwNGU0", "Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vNTk0MmI4NDAtOWU2ZS0xMWVlLWJiZjMtNjM5MjNmODVmMGQ4"]  # Replace with the actual room IDs
+target_room_ids = ["Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vOWNmOTJjYTAtOWU3Mi0xMWVlLWIzMzEtOWRhNDAzZWQwNGU0", "Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vNTk0MmI4NDAtOWU2ZS0xMWVlLWJiZjMtNjM5MjNmODVmMGQ4"]
 
 # Send a notification to each specified room
 for room_id in target_room_ids:
